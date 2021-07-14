@@ -1,2 +1,2 @@
-
+.visually-hidden:not(:focus):not(:active),input[type=checkbox].visually-hidden,input[type=radio].visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;white-space:nowrap;-webkit-clip-path:inset(100%);clip-path:inset(100%);clip:rect(0 0 0 0);overflow:hidden}.wrapper{display:grid;-webkit-box-sizing:border-box;box-sizing:border-box;min-width:calc($desktop-width);max-width:calc(1200px);margin-right:auto;margin-left:auto;padding:0 15px}@media (max-width:1023px){.wrapper{min-width:768px;max-width:1023px;padding:0 20px}}@media (max-width:767px){.wrapper{min-width:320px;max-width:767px;padding:0 16px}}
 /*# sourceMappingURL=style.min.css.map */
