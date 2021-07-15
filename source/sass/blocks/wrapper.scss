@@ -2,7 +2,7 @@
   display: grid;
   box-sizing: border-box;
   min-width: calc($desktop-width);
-  max-width: calc(1200px);
+  max-width: calc($desktop-width-max);
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
