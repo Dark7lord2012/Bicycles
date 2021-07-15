@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body">
-  <header class="header">
+  <header class="header header--no-js">
     <div class="header__wrapper wrapper">
       <a class="header__logo-link" href="#" >
         <img src="img/logo.svg" alt="Moon" class="header__logo-img" width="67" height="20">
       </a>
+      <button class="header__toggle">
+        <div class="visually-hidden">Открыть/закрыть меню</div>
+      </button>
       <nav class="header__nav nav">
         <ul class="nav__site-list site-list">
           <li class="site-list__item">
@@ -60,5 +63,6 @@
   <footer>
     <!-- Тут подвал (самое место для хранения велосипедов) -->
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

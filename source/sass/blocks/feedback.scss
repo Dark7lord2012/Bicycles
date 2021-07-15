@@ -3,6 +3,14 @@
   flex-direction: column;
   width: 327px;
   margin-left: auto;
+
+  @media (max-width: $tablet-width-max) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: $white;
+    color: $black;
+  }
 }
 
 .feedback__text {
@@ -12,6 +20,15 @@
   line-height: 28px;
   font-weight: 600;
   text-align: center;
+
+  @media (max-width: $tablet-width-max) {
+    width: 321px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+  }
 }
 
 .feedback__input-text {
@@ -20,22 +37,38 @@
   line-height: 24px;
   font-weight: 400;
   color: $black-two;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.2px; // pixel-perfect
   border-radius: 6px;
   border: 1px solid $border-color;
 
   & + .feedback__input-text {
     margin-top: 20px;
   }
+
+  @media (max-width: $tablet-width-max) {
+    width: 321px;
+    padding: 13px 20px 9px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
 }
 
 .feedback__button-submit {
   margin-top: 20px;
-  padding: 15px 13px 14px;
+  padding: 16px 13px 13px;
 
   font-size: 15px;
   line-height: 21px;
   font-weight: 600;
   border-radius: 6px;
   background-color: $aqua;
+  border: none;
+
+  @media (max-width: $tablet-width-max) {
+    width: 321px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
 }
