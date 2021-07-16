@@ -9,4 +9,8 @@
     width: 100%;
     height: 1787.5px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    height: 2502px;
+  }
 }
