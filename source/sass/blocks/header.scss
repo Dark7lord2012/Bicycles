@@ -6,7 +6,7 @@
   color: $white;
   background-color: $promo-back;
   background-image: url("../img/promo-bike.jpg");
-  background-position: center;
+  background-position: center -32px;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -18,7 +18,17 @@
     padding-top: 0;
     padding-bottom: 0;
     background-size: contain;
-    background-position: center -50px;
+    background-position: center -67px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    background-size: 551px 390px;
+    background-position: center 0px;
+    background-image: url("../img/promo-bike-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-bike-mobile@2x.jpg");
+    }
   }
 }
 
@@ -146,7 +156,8 @@
   font-size: 46px;
   line-height: 64px;
   font-weight: 700;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.005em; // it is not works!!
+  letter-spacing: 0.8px;
 
   @media (max-width: $tablet-width-max) {
     margin-top: 84px;
@@ -157,6 +168,11 @@
     line-height: 42px;
     letter-spacing: 0.6px;
     text-align: center;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 72px;
+    margin-bottom: 20px;
   }
 }
 
@@ -169,10 +185,12 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.005em; // it is not works!!
+  letter-spacing: -0.6px;
 
   @media (max-width: $tablet-width-max) {
     width: 435px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
@@ -182,13 +200,16 @@
     text-align: center;
     letter-spacing: -0.5px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 70px;
+  }
 }
 
 .header__feedback {
   grid-row: 2 / 5;
   grid-column: 2 / 3;
   margin-left: 30px;
-  outline: 1px solid red;
 
   @media (max-width: $tablet-width-max) {
     order: 1;
