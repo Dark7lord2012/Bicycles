@@ -12,6 +12,8 @@
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
+    max-width: none;
+    padding-bottom: 0;
   }
 }
 
