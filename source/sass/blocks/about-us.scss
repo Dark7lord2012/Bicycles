@@ -7,7 +7,7 @@
   background-color: $white;
   padding: 151px 15px 130px;
   box-sizing: border-box;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 
   @media (max-width: $tablet-width-max) {
     padding-top: 0px;
@@ -15,7 +15,9 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    height: 2502px;
+    padding-top: 52px;
+    padding-bottom: 70px;
+    background-color: grey;
   }
 }
 
@@ -32,6 +34,11 @@
     font-size: 24px;
     line-height: 41px;
     margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-right: -1px;
+    margin-left: -1px;
   }
 }
 
@@ -56,6 +63,12 @@
     max-width: none;
     margin-right: 100px;
     margin-left: 100px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 35px 0;
   }
 }
 
@@ -89,6 +102,13 @@
 
   @media (max-width: $tablet-width-max) {
     gap: 17px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    gap: 9px;
+    min-height: 125px;
+    font-size: 18px;
+    line-height: 34px;
   }
 }
 
