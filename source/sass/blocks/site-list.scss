@@ -4,7 +4,7 @@
   // outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
-  max-width: 877px;
+  max-width: 876px;
   margin: 0;
   padding: 0 0 8px;
   list-style: none;
@@ -24,7 +24,7 @@
   }
 
   &:last-child {
-    margin-right: 21px;
+    margin-right: 22px;
   }
 
   @media (max-width: $tablet-width-max) {

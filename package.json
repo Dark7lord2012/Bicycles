@@ -1,7 +1,7 @@
 {
-  "name": "way",
+  "name": "bikes",
   "private": true,
-  "description": "Личный проект «Way» от HTML Academy",
+  "description": "Личный проект «Bikes» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
