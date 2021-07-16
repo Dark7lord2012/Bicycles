@@ -1,8 +1,13 @@
+// Базовые стили
 @import "blocks/variables.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/wrapper.scss";
 @import "blocks/body.scss";
+// Шапка
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/feedback.scss";
+// О нас
+@import "blocks/about-us.scss";
+@import "blocks/footer.scss";
