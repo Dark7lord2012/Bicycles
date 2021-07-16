@@ -2,8 +2,6 @@
   display: block;
   width: 1440px;
   max-width: 100%;
-  // height: 2247px;
-  // background-color: lightcoral;
   background-color: $white;
   padding: 151px 15px 130px;
   box-sizing: border-box;
@@ -17,7 +15,6 @@
   @media (max-width: $mobile-width-max) {
     padding-top: 52px;
     padding-bottom: 70px;
-    background-color: grey;
   }
 }
 
