@@ -3,8 +3,8 @@
   padding-bottom: 148px;
   padding-left: 60px;
   padding-right: 60px;
-  outline: 1px solid red;
-  overflow: hidden; // правое кольцо создает дополнительную ширину
+  // outline: 1px solid red;
+  overflow: hidden; // иногда кольца создают ненужную ширину
   background-color: $catalog-back;
 
   @media (max-width: $tablet-width-max) {
@@ -12,6 +12,13 @@
     padding-left: 89px;
     padding-right: 89px;
     padding-bottom: 70px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 50px;
+    padding-bottom: 53px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -30,9 +37,15 @@
 
   @media (max-width: $tablet-width-max) {
     margin-bottom: 30px;
+    max-width: 100%;
 
     font-size: 24px;
     line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 29px;
+    // letter-spacing: ;
   }
 }
 
@@ -50,10 +63,19 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    gap: 42px;
+  }
 }
 
 .catalog__card {
   @media (max-width: $tablet-width-max) {
     width: calc(50% - 25px);
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
   }
 }
