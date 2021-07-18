@@ -4,6 +4,10 @@
   background-color: $video-back;
   color: $white;
   text-align: center;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 70px;
+  }
 }
 
 .video-bikes__title {
@@ -13,6 +17,10 @@
   font-size: 30px;
   line-height: 30px;
   font-weight: 600;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 24px;
+  }
 }
 
 .video-bikes__text {
@@ -27,6 +35,11 @@
   font-weight: 300;
   letter-spacing: -0.4px;
   color: rgba($white, 0.7);
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 429px;
+    margin-bottom: 40px;
+  }
 }
 
 .video-bikes__wrapper {
@@ -40,20 +53,30 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: -100px;
-  bottom: -100px;
+  top: 100px;
 
   background-color: $black-two;
   background-image: url("../img/video-bike.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/video-bike@2x.jpg");
   }
+
+  @media (max-width: $tablet-width-max) {
+    width: calc(100% - 264px);
+    margin-top: -85px;
+    top: 85px;
+  }
 }
 
 .video-bikes__video {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 .video-bikes__button-play {
@@ -67,7 +90,10 @@
 
   background-color: $aqua;
   background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 50%;
+  background-size: 65px;
 
   cursor: pointer;
 
@@ -79,5 +105,11 @@
 
   &:active {
     opacity: 0.5;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 90px;
+    height: 90px;
+    background-size: 90px;
   }
 }
