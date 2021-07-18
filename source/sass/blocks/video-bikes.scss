@@ -8,6 +8,10 @@
   @media (max-width: $tablet-width-max) {
     padding-top: 70px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 84px;
+  }
 }
 
 .video-bikes__title {
@@ -39,6 +43,11 @@
   @media (max-width: $tablet-width-max) {
     max-width: 429px;
     margin-bottom: 40px;
+    padding: 0 16px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 50px;
   }
 }
 
@@ -70,6 +79,12 @@
     margin-top: -85px;
     top: 85px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    width: calc(100% - 32px);
+    margin-top: -46px;
+    top: 48px;
+  }
 }
 
 .video-bikes__video {
@@ -100,7 +115,7 @@
   &:hover,
   &:focus {
     opacity: 0.8;
-    box-shadow: 0 0 3px $aqua; // самоуправство, разрешено ли?
+    box-shadow: 0 0 3px $aqua;
   }
 
   &:active {
@@ -111,5 +126,11 @@
     width: 90px;
     height: 90px;
     background-size: 90px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 65px;
+    height: 65px;
+    background-size: 65px;
   }
 }
