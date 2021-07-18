@@ -1,0 +1,83 @@
+.video-bikes {
+  padding-top: 121px;
+
+  background-color: $video-back;
+  color: $white;
+  text-align: center;
+}
+
+.video-bikes__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.video-bikes__text {
+  max-width: 340px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: rgba($white, 0.7);
+}
+
+.video-bikes__wrapper {
+  position: relative;
+  outline: 1px solid red;
+  max-width: 929px;
+  width: 100%;
+  max-height: 522px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  bottom: -100px;
+
+  background-color: $black-two;
+  background-image: url("../img/video-bike.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-bike@2x.jpg");
+  }
+}
+
+.video-bikes__video {
+}
+
+.video-bikes__button-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65px;
+  height: 65px;
+  border: none;
+
+  background-color: $aqua;
+  background-image: url("../img/icon-play.svg");
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    box-shadow: 0 0 3px $aqua; // самоуправство, разрешено ли?
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
