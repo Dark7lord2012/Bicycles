@@ -8,7 +8,7 @@
   // outline: 1px solid red;
 
   @media (max-width: $tablet-width-max) {
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 49px;
   }
 
@@ -53,10 +53,9 @@
   counter-reset: facts;
 
   @media (max-width: $tablet-width-max) {
-    max-width: 100%;
+    max-width: none;
     grid-template-columns: 1fr 1fr;
     gap: 21px 47px;
-    max-width: none;
     margin-right: 100px;
     margin-left: 100px;
   }
@@ -83,7 +82,6 @@
   color: $black;
   letter-spacing: -0.5px;
   text-align: center;
-  outline: 1px solid red;
 
   &::before {
     counter-increment: facts;
@@ -107,5 +105,3 @@
     line-height: 34px;
   }
 }
-
-

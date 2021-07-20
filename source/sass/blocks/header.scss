@@ -23,7 +23,7 @@
 
   @media (max-width: $mobile-width-max) {
     background-size: 551px 390px;
-    background-position: center 0px;
+    background-position: center 0;
     background-image: url("../img/promo-bike-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -99,7 +99,7 @@
       right: 0;
       margin: 0;
 
-      background-color: #fff;
+      background-color: $white;
     }
   }
 }
@@ -124,10 +124,8 @@
     order: -2;
     width: 50px;
     height: 50px;
-    display: block;
     margin-left: auto;
     padding: 0;
-    // margin-right: -20px;
 
     background-image: url("../img/icon-menu.svg");
     font-size: 30px;
@@ -155,7 +153,6 @@
   font-size: 46px;
   line-height: 64px;
   font-weight: 700;
-  letter-spacing: -0.005em; // it is not works!!
   letter-spacing: 0.8px;
 
   @media (max-width: $tablet-width-max) {
@@ -184,7 +181,6 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 32px;
-  letter-spacing: -0.005em; // it is not works!!
   letter-spacing: -0.6px;
 
   @media (max-width: $tablet-width-max) {
