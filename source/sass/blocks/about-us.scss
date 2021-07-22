@@ -20,7 +20,7 @@
   }
 }
 
-.about-us__title {
+.about-us h2 {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -44,11 +44,10 @@
 }
 
 
-.about-us__list {
+.about-us ol {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 38px;
-  // flex-wrap: wrap;
   justify-content: center;
   max-width: 1166px;
   margin: 0 auto;
@@ -75,7 +74,7 @@
   }
 }
 
-.about-us__list-item {
+.about-us li {
   display: flex;
   flex-shrink: 1;
   flex-direction: column;

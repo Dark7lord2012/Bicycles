@@ -108,7 +108,7 @@
   }
 }
 
-.card__img {
+.card img {
   width: 100%;
   object-fit: cover;
   background-position: center;
@@ -124,7 +124,7 @@
   }
 }
 
-.card__link {
+.card a:nth-of-type(2n) {
   display: flex;
   justify-content: center;
   margin-top: 17px;

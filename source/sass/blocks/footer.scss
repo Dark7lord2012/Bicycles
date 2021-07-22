@@ -2,16 +2,6 @@
   padding-top: 249px;
   padding-bottom: 98px;
 
-  img {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 100%;
-    object-fit: cover;
-    object-position: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   @media (max-width: $tablet-width-max) {
     padding-top: 155px;
     padding-bottom: 55px;
@@ -26,7 +16,7 @@
   max-width: 1126px;
 }
 
-.footer__title {
+.footer h2 {
   max-width: 50%;
   margin-top: 0;
   margin-bottom: 30px;
@@ -50,7 +40,7 @@
   }
 }
 
-.footer__address {
+.footer address {
   max-width: 467px;
   margin-top: 0;
   margin-bottom: 42px;
@@ -73,7 +63,7 @@
   }
 }
 
-.footer__map-image {
+.footer img {
   display: inline-block;
   vertical-align: top;
   max-width: 100%;
