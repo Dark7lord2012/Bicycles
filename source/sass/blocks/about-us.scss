@@ -1,11 +1,13 @@
 .about-us {
   display: block;
+  box-sizing: border-box;
   width: 1440px;
   max-width: 100%;
-  background-color: $white;
   padding: 151px 15px 130px;
-  box-sizing: border-box;
-  // outline: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $white;
 
   @media (max-width: $tablet-width-max) {
     padding-top: 0;
@@ -21,16 +23,18 @@
 .about-us__title {
   margin-top: 0;
   margin-bottom: 50px;
+
+  font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 600;
-  color: $black-three;
   text-align: center;
+  color: $black-three;
 
   @media (max-width: $tablet-width-max) {
+    margin-bottom: 30px;
+
     font-size: 24px;
     line-height: 41px;
-    margin-bottom: 30px;
   }
 
   @media (max-width: $mobile-width-max) {
@@ -41,57 +45,63 @@
 
 
 .about-us__list {
-  max-width: 1166px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  flex-wrap: wrap;
-  padding: 0;
   gap: 38px;
+  // flex-wrap: wrap;
   justify-content: center;
+  max-width: 1166px;
   margin: 0 auto;
+  padding: 0;
+
   list-style: none;
+
   counter-reset: facts;
+
 
   @media (max-width: $tablet-width-max) {
     max-width: none;
-    grid-template-columns: 1fr 1fr;
-    gap: 21px 47px;
     margin-right: 100px;
     margin-left: 100px;
+
+    gap: 21px 47px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (max-width: $mobile-width-max) {
-    margin: 0;
-    grid-template-columns: 1fr;
     gap: 35px 0;
+    grid-template-columns: 1fr;
+    margin: 0;
   }
 }
 
 .about-us__list-item {
   display: flex;
+  flex-shrink: 1;
   flex-direction: column;
   align-items: center;
-  min-height: 143px;
   width: auto;
+  min-height: 143px;
   gap: 15px;
-  flex-shrink: 1;
 
+  font-weight: 400;
   font-size: 22px;
   line-height: 34px;
-  font-weight: 400;
+  text-align: center;
   color: $black;
   letter-spacing: -0.5px;
-  text-align: center;
 
   &::before {
-    counter-increment: facts;
     content: counter(facts, decimal-leading-zero);
+
+    font-weight: 700;
     font-size: 28px;
     line-height: 38px;
-    font-weight: 700;
-    letter-spacing: -1.27px;
     text-align: center;
     color: $aqua;
+    letter-spacing: -1.27px;
+
+    counter-increment: facts;
   }
 
   @media (max-width: $tablet-width-max) {
@@ -99,8 +109,9 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    gap: 9px;
     min-height: 125px;
+    gap: 9px;
+
     font-size: 18px;
     line-height: 34px;
   }

@@ -2,6 +2,16 @@
   padding-top: 249px;
   padding-bottom: 98px;
 
+  img {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (max-width: $tablet-width-max) {
     padding-top: 155px;
     padding-bottom: 55px;
@@ -10,6 +20,10 @@
   @media (max-width: $mobile-width-max) {
     padding-top: 120px;
   }
+}
+
+.footer__wrapper {
+  max-width: 1126px;
 }
 
 .footer__title {
@@ -61,6 +75,7 @@
 
 .footer__map-image {
   display: inline-block;
+  vertical-align: top;
   max-width: 100%;
   object-fit: cover;
   object-position: center;
