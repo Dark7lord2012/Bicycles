@@ -10,4 +10,4 @@
   headerToggle.addEventListener('click', () => {
     header.classList.toggle('header--opened');
   });
-});
+})();
