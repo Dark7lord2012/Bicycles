@@ -21,7 +21,7 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    background-size: 172.5% auto; // Pixel Perfect, + чтобы картинка тянулась по ширине и совдпадала по макету
+    background-size: 172.5% auto; // Pixel Perfect + чтобы картинка тянулась по ширине и совдпадала по макету
     background-position: center 0;
     background-image: url("../img/promo-bike-mobile.jpg");
 
