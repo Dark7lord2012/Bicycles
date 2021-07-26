@@ -21,7 +21,7 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    background-size: 551px 390px;
+    background-size: 172.5% auto; // Pixel Perfect, + чтобы картинка тянулась по ширине и совдпадала по макету
     background-position: center 0;
     background-image: url("../img/promo-bike-mobile.jpg");
 
@@ -43,19 +43,7 @@
   }
 }
 
-.header--no-js {
-  @media (max-width: $tablet-width-max) {
-    .header__toggle {
-      display: none;
-    }
-
-    .hedaer__nav {
-      position: static;
-    }
-  }
-}
-
-.header nav {
+.header__nav {
   order: -1;
   margin-bottom: 256px;
   grid-column: 1 / 3;
@@ -67,6 +55,20 @@
     margin-left: -20px;
     margin-right: -20px;
     margin-bottom: 0;
+  }
+}
+
+.header--no-js {
+  @media (max-width: $tablet-width-max) {
+    .header__toggle {
+      display: none;
+    }
+
+    .header__nav {
+      position: static;
+      display: flex;
+      background-color: $white;
+    }
   }
 }
 

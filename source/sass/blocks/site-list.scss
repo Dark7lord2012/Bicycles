@@ -1,7 +1,4 @@
 .site-list {
-  // display: grid;
-  // grid-template-columns: repeat(4, 1fr);
-  // outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   max-width: 876px;
@@ -13,6 +10,7 @@
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
     max-width: none;
+    width: 100%;
     padding-bottom: 0;
   }
 }
@@ -45,7 +43,7 @@
       margin-bottom: 30px;
     }
 
-    & + .site-list__item {
+    & + li {
       margin-top: 30px;
     }
   }

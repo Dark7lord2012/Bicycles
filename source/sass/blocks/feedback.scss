@@ -86,6 +86,7 @@
   border-radius: 6px;
   background-color: $aqua;
   border: none;
+  cursor: pointer;
 
   @media (max-width: $tablet-width-max) {
     width: 321px;
