@@ -1,15 +1,20 @@
 .card {
   position: relative;
+  flex-shrink: 0;
 
-  &:first-child {
+  &:nth-child(3n - 2) {
     margin-top: 10px;
+
+    img {
+      height: 84.4%;
+    }
 
     &::before {
       z-index: 0;
       position: absolute;
       top: 156px;
       left: -60px;
-      // display: block;
+
       width: 180px;
       height: 180px;
       box-sizing: border-box;
@@ -21,6 +26,10 @@
 
   &:nth-child(2n) {
     margin-top: 40px;
+
+    img {
+      height: 99.7%;
+    }
 
     &::before,
     &::after {
@@ -38,11 +47,15 @@
       top: auto;
       left: auto;
       right: -23px;
-      bottom: 32px;
+      bottom: -22px;
     }
   }
 
   &:nth-child(3n) {
+    img {
+      height: 84.5%;
+    }
+
     &::before {
       z-index: 2;
       position: absolute;
@@ -58,16 +71,19 @@
   }
 
   @media (max-width: $tablet-width-max) {
-    &:first-child,
+    &:nth-child(3n - 2),
     &:nth-child(2n),
     &:nth-child(3n) {
       margin-top: 0;
+
+      img {
+        height: 300px;
+      }
     }
 
     &:first-child {
       &::before {
-        top: auto;
-        bottom: 28px;
+        top: 201px;
         left: -37px;
 
         width: 127px;
@@ -119,9 +135,9 @@
     position: relative;
   }
 
-  @media (max-width: $tablet-width-max) {
-    height: 300px;
-  }
+  // @media (max-width: $tablet-width-max) {
+  //   height: 300px;
+  // }
 }
 
 .card a:nth-of-type(2n) {
