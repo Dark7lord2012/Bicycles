@@ -97,7 +97,8 @@
   margin-right: auto;
   margin-bottom: 0;
   padding-right: 16px;
-  gap: 90px;
+  gap:  30px 90px;
+  justify-content: space-around;
 
   @media (max-width: $tablet-width-max) {
     margin-top: 17px;
