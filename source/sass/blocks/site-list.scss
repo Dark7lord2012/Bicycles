@@ -1,6 +1,10 @@
 .site-list {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: space-between;
+  gap: 10px;
   max-width: 876px;
   margin: 0;
   padding: 0 0 8px;
@@ -8,6 +12,8 @@
   border-bottom: 1px solid rgba($white, 0.2);
 
   @media (max-width: $tablet-width-max) {
+    display: flex;
+    gap: none;
     flex-direction: column;
     max-width: none;
     width: 100%;
@@ -17,15 +23,8 @@
 
 .site-list li {
   text-align: center;
-  margin-right: auto;
-
-  &:first-child {
-    margin-left: 21px;
-  }
-
-  &:last-child {
-    margin-right: 22px;
-  }
+  padding: 0 22px;
+  box-sizing: border-box;
 
   @media (max-width: $tablet-width-max) {
     margin-right: 0;
@@ -35,11 +34,9 @@
 
     &:first-child {
       margin-top: 100px;
-      margin-left: 0;
     }
 
     &:last-child {
-      margin-right: 0;
       margin-bottom: 30px;
     }
 
