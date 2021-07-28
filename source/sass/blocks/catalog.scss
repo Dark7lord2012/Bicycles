@@ -60,13 +60,12 @@
   list-style: none;
 
   @media (max-width: $tablet-width-max) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
+    grid-template-columns: 270px 270px;
+    justify-content: space-evenly;
   }
 
   @media (max-width: $mobile-width-max) {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 42px;
@@ -75,11 +74,25 @@
 
 .catalog li {
   @media (max-width: $tablet-width-max) {
-    // width: calc(50% - 25px);
-    width: 270px;
+    // width: calc(100% - 25px);
+    // width: 270px;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    &:nth-child(2n - 1):last-child {
+      width: calc(50% - 25px);
+      width: 270px;
+      margin-left: auto;
+      margin-right: auto;
+      grid-column: 1 / span 2;
+    }
   }
 
   @media (max-width: $mobile-width-max) {
-    // width: 100%;
+    width: 270px;
+
+    &:nth-child(2n - 1):last-child {
+      width: 270px;
+    }
   }
 }
