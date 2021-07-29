@@ -37,9 +37,7 @@
   max-width: calc(880px + 30px);
 
   @media (max-width: $tablet-width-max) {
-    // display: flex;
     max-width: none;
-    // flex-wrap: wrap;
   }
 }
 

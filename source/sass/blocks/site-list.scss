@@ -1,6 +1,4 @@
 .site-list {
-  // display: flex;
-  // flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(4, max-content);
   justify-content: space-between;
