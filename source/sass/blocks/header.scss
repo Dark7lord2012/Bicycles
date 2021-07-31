@@ -73,7 +73,7 @@
 .header--opened {
   @media (max-width: $tablet-width-max) {
     .header__toggle {
-      z-index: 2;
+      z-index: 7;
       background-color: $white;
       background-image: url("../img/icon-cross.svg");
       opacity: 0.2;
@@ -89,12 +89,15 @@
     }
 
     .header__nav {
-      z-index: 1;
-      position: absolute;
+      z-index: 2;
+      position: fixed;
       display: block;
       top: 0;
       left: 0;
       right: 0;
+      bottom: 0;
+      overflow: auto;
+
       margin: 0;
 
       background-color: $white;

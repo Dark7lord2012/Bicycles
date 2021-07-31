@@ -4,11 +4,48 @@
   // Открытие / закрытие мобильной шапки
   const header = document.querySelector('.header');
   const headerToggle = document.querySelector('.header__toggle');
-
   header.classList.remove('header--no-js');
 
   headerToggle.addEventListener('click', () => {
     header.classList.toggle('header--opened');
+    const body = document.querySelector('body');
+    const selector = 'input, button:not(.header__toggle), .header__nav>a:not(a[href])';
+    const interactiveElements = document.querySelectorAll(selector);
+    const headerNav = document.querySelectorAll('header_nav a');
+
+    // Закрытие меню по нажатию Esc
+    const onToggleHeaderPressEsc = (evt) => {
+      if (evt.key == 'Escape') {
+        evt.preventDefault();
+        header.classList.remove('header--opened');
+        headerToggle.removeEventListener('keydown', onToggleHeaderPressEsc);
+      }
+    };
+
+    if (header.classList.contains('header--opened')){
+      header.addEventListener('keydown', onToggleHeaderPressEsc);
+      body.style.overflow = "hidden";
+      body.style.height = "100vh";
+
+      for (let i of interactiveElements) {
+        i.tabIndex = -1;
+      };
+
+      for (let j of headerNav) {
+        j.tabIndex = -1;
+      }
+    }
+
+    body.style.overflow = "auto";
+    body.style.height = "auto";
+
+    for (let i of interactiveElements) {
+      i.tabIndex = 0;
+    };
+
+    for (let j of headerNav) {
+      j.tabIndex = -1;
+    }
   });
 
   // Маска для телефона
